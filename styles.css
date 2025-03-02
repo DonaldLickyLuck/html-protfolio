@@ -1,0 +1,219 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #6a0dad, #1a1a1a); /* Purple-black gradient background */
+    color: rgb(138, 132, 132);
+    text-align: center; /* Centering all the text */
+}
+
+/* Centering Content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+h1 {
+    font-size: 2.5em;
+    margin-top: 20px;
+    color: #fff;
+}
+
+h2, h3 {
+    font-size: 2em;
+    margin: 20px 0;
+    color: #fff;
+}
+
+h4, h5, h6 {
+    font-size: 1.2em;
+    color: #dcdcdc; /* Lighter color for subheadings */
+}
+
+/* Image Style */
+img {
+    border-radius: 50%;
+    margin-top: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* Summary Section */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+/* Section Divider */
+hr {
+    border: 1px solid #fff;
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Links */
+a {
+    color: #ff79c6; /* Pinkish hue for links */
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+a:hover {
+    color: #f1f1f1; /* Hover color for links */
+}
+
+/* Skills Section */
+.skills-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.skills-section li {
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent white for each skill */
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    font-size: 1.2em;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* Work Experience & Education Section */
+.work-experience, .education {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.work-experience h3, .education h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.8em;
+    }
+
+    .skills-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-section li {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Animation for Header */
+@keyframes fadeInSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    animation: fadeInSlideIn 2s ease-out;
+}
+
+/* Hover effect for image */
+img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Progress Bar Styles */
+.progress-container {
+    width: 100%;
+    background-color: #eee;
+    border-radius: 5px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.progress-bar {
+    background-color: #6a0dad; /* Purple color */
+    height: 100%;
+    border-radius: 5px;
+    width: 0%; /* Initial width, will animate */
+    animation: progressAnimation 2s ease-out forwards;
+}
+
+/* Animation for progress bar */
+@keyframes progressAnimation {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%; /* Change this value according to your skill */
+    }
+}
+
+/* Smooth Scroll Effect */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Styling the About Me Button */
+.about-btn {
+    display: inline-block; /* Makes the link behave like a button */
+    padding: 10px 20px; /* Adds padding inside the button */
+    margin-top: 20px; /* Adds space above the button */
+    border: 2px solid #6a0dad; /* Purple border color */
+    color: #6a0dad; /* Purple text color */
+    font-size: 16px; /* Font size */
+    text-decoration: none; /* Removes the default underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Button hover effect */
+.about-btn:hover {
+    background-color: #6a0dad; /* Background color on hover */
+    color: white; /* Text color changes to white on hover */
+    border-color: #4b0082; /* Darker purple border on hover */
+    transform: scale(1.05); /* Slightly scale the button on hover */
+}
+
